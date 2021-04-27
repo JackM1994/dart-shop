@@ -1,6 +1,5 @@
 body{
-    height: fit-content;
-    margin: auto 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -40,9 +39,7 @@ Tile styles
     display: flex;
 }
 .main-product{
-    flex-grow: 2;
     width: 60%;
-    justify-self: flex-start;
     background:linear-gradient(
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
@@ -52,20 +49,18 @@ Tile styles
 }
 .product-title{
     color: white;
-    height:500px;
     position: absolute;
-    margin:10px;
     font-size: 3.2em;
-    top: 50%;
-    left: 50%;
-    transform: translate(32%, -13%);
+    top: 40%;
+    left: 35%;
+    transform: translate(32%, -3%);
 }
 .desc{
     position: absolute;
-    top: 52%;
-    left: 46%;
+    top: 58%;
+    left: 26%;
     font-size: 1.6em;
-    transform: translate(52%, -10%);
+    transform: translate(52%, -15%);
     color: white;
 }
 .side-divs{
@@ -75,14 +70,22 @@ Tile styles
     width: 25%;
     height: auto;
     justify-self:flex-end;
-    background-color: rgba(0, 0, 0, 0.6);
     height:282px;
     width:100%;
     position: relative;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ), url('../images/darts.jpeg') no-repeat center; 
+    background-size: cover;
 }
 .bp{
     justify-self: baseline;
-    background-color: rgba(0, 0, 0, 0.9);
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ), url('../images/dart-shirt.jpeg') no-repeat center; 
+    background-size: cover;
     
 }
 .shop-now{
@@ -95,4 +98,47 @@ Tile styles
     position: absolute;
     top: 70%;
     left: 25%;
+}
+/* --------------
+Footer  Styles
+----------------*/
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    min-height: 50px;
+    margin: 0;
+}
+.footer-items{
+    display: inline-block;
+    margin: 20px;
+    list-style-type: none;
+}
+
+/* Media Queries */
+@media (max-width: 1000px){
+    #main{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-product{
+        height:250px;
+        width: 100%;
+    }
+    .product-title{
+        top: 25%;
+        left: 5%;
+    }
+    .desc{
+        top: 50%;
+        left: 5%;
+    }
+    .side-divs{
+        width: 100%;
+    }
+    .shop-now{
+        margin: 10px;
+        left: 60%;
+        top: 30%;
+    }
 }
