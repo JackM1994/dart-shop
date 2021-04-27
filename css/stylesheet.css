@@ -142,3 +142,8 @@ Footer  Styles
         top: 30%;
     }
 }
+@media (max-width: 768px){
+    .shop-now{
+        top: 60%;
+    }
+}
