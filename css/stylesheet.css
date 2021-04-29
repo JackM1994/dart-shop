@@ -31,7 +31,46 @@ Navbar styles
     list-style-type: none;
     display: inline-block;
 }
-
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border:none;
+    border-right: none;
+    padding: 18px;
+    height:20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: black;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: none;
+    background: white;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  
 /* ------------------
 Tile styles
 ---------------------*/
@@ -202,6 +241,7 @@ SHOP AREA
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 .card-info{
     display: block;
