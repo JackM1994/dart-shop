@@ -355,3 +355,41 @@ position: relative;
 .wi-three{
     top: 60%;
 }
+.buy-btn{
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-80%, -50%);
+    padding: 0.65rem 3.5rem;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    background: #1D976C;
+    color: white;
+    cursor: pointer;
+}
+
+.back-link{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    text-decoration: none;
+    color: black;
+    font-size: 0.95rem;
+}
+.currency-list{
+    position: absolute;
+    left: 85%;
+    top: 35%;
+}
+.currencies{
+    color: grey;
+    display: block;
+    margin:10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+.currencies:hover, .active{
+    color:  #4A00E0; 
+}
